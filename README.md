@@ -1,20 +1,43 @@
-# Arato Simulate — Claude Code Plugin
+# Arato Simulate — Claude Plugin
 
-Test your AI applications from Claude Code using [Arato Simulate](https://simulate.arato.ai).
+Test your AI applications from Claude using [Arato Simulate](https://simulate.arato.ai).
 
-Arato Simulate evaluates AI chat and voice applications by running automated simulations with realistic user personas. This plugin connects Claude Code to the Arato platform, giving you access to all Arato tools directly from your editor.
+Arato Simulate evaluates AI chat and voice applications by running automated simulations with realistic user personas. This plugin connects Claude to the Arato platform, giving you access to all 25 Arato tools directly from your editor or desktop app.
 
 ## Prerequisites
 
 - An [Arato Simulate](https://simulate.arato.ai) account
-- [Claude Code](https://code.claude.com) installed
+- [Claude Code](https://code.claude.com) or [Claude Desktop](https://claude.ai/download)
 
 ## Installation
+
+### Claude Code
 
 ```
 /plugin marketplace add AratoAi/claude-code-plugin
 /plugin install arato-simulate@arato-plugins
 ```
+
+This gives you the full experience: MCP tools, skills, and the `@simulation-operator` agent.
+
+### Claude Desktop
+
+Add the Arato MCP server to your Claude Desktop config:
+
+**macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+**Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+
+```json
+{
+  "mcpServers": {
+    "arato-simulate": {
+      "url": "https://simulate.arato.ai/mcp"
+    }
+  }
+}
+```
+
+Restart Claude Desktop after saving. All 25 MCP tools will be available. Skills and agents are Claude Code-only.
 
 ## Authentication
 
