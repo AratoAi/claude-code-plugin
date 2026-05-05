@@ -18,9 +18,9 @@ Arato Simulate evaluates AI chat and voice applications by running automated sim
 
 ## Authentication
 
-On first use, Claude Code opens a browser window for you to log in to Arato. Authentication is handled automatically via OAuth — no API keys or config files needed.
+The plugin uses **OAuth 2.1 with PKCE** — the recommended authentication method. On first use, Claude Code opens a browser window for you to log in to Arato. No API keys or config files needed. Your session is refreshed automatically.
 
-For headless or CI environments, you can configure an API key instead. Create one under **Settings > API Keys** in the Arato UI, then set it in your Claude Code MCP settings:
+Alternatively, for headless or CI environments, you can pass a bearer token directly. Create an API key under **Settings > API Keys** in the Arato UI, then set it in your Claude Code MCP settings:
 
 ```json
 {
