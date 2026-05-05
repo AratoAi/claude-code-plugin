@@ -1,0 +1,14 @@
+{
+  "name": "arato-plugins",
+  "owner": {
+    "name": "Arato AI",
+    "email": "support@arato.ai"
+  },
+  "plugins": [
+    {
+      "name": "arato-simulate",
+      "source": ".",
+      "description": "Test your AI applications from Claude Code using Arato Simulate"
+    }
+  ]
+}

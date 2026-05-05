@@ -1,0 +1,9 @@
+{
+  "name": "arato-simulate",
+  "description": "Arato Simulate — test your AI applications from Claude Code",
+  "mcpServers": {
+    "arato-simulate": {
+      "url": "https://simulate.arato.ai/mcp"
+    }
+  }
+}
